@@ -22,7 +22,6 @@
     <style>
 
 :root{
-/* background-size: cover; */
 --base: #ffc600;
 --spacing: 10px;
 --blur:10px;
@@ -30,7 +29,7 @@
 }
 
 img{
-/* background-size: cover; */
+
 padding: var(--spacing);
 background: var(--base);
 filter: blur(var(--blur));
@@ -49,11 +48,7 @@ align-items: center;
 const inputs = document.querySelectorAll('.controls input' );
 function handleUpdates(){
 
-// console.log(this.value);
-// console.log(this.dataset);
 const suffix = this.dataset.sizing || '';
-// console.log(suffix);
-// console.log(this.name);
 document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix);
 
 }
